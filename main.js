@@ -35,3 +35,11 @@ function solveTime(time, f = true){
 		return time+"% Will Happen On "+weekday[day.getDay()]+" "+month[day.getMonth()]+" "+day.getDate()+" "+day.getFullYear()+" "+day.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true })+" and "+day.getMilliseconds()+" millisecond(s)."
 	}
 }
+
+function getDays(r=5){
+	now = new Date()
+	timeRemaining = end-now
+	toDays = timeRemaining/(1000*60*60*24)
+	
+	return round(toDays,r);
+}

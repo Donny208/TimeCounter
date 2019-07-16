@@ -4,7 +4,6 @@ month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", 
 start = new Date("July 7, 2019 09:00:00")
 end = new Date("Aug 24, 2019 18:00:00")
 
-
 function round(value, decimals) {
   return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
 }
@@ -67,7 +66,6 @@ function getSeconds(r=5){
 	
 	return round(toDays,r);
 }
-
 
 function getFull(){
 	now = new Date()

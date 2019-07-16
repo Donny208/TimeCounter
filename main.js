@@ -67,3 +67,25 @@ function getSeconds(r=5){
 	
 	return round(toDays,r);
 }
+
+
+function getFull(){
+	now = new Date()
+	timeRemaining = end-now
+	days = timeRemaining/(1000*60*60*24)
+	
+	hours = days - Math.floor(days);
+	decimalPlaces = days.toString().split('.')[1].length;
+	hours = JSON.parse(hours.toFixed(decimalPlaces))*24;
+	
+	mins = hours - Math.floor(hours);
+	decimalPlaces = hours.toString().split('.')[1].length;
+	mins = JSON.parse(mins.toFixed(decimalPlaces))*60;
+	
+	secs = mins - Math.floor(mins);
+	decimalPlaces = mins.toString().split('.')[1].length;
+	secs = JSON.parse(secs.toFixed(decimalPlaces))*60;
+	
+	//return Math.trunc(JSON.parse(days))+":"+Math.trunc(JSON.parse(hours))+":"+Math.trunc(JSON.parse(mins))+":"+Math.trunc(JSON.parse(secs));
+	return Math.trunc(JSON.parse(days))+" days, "+Math.trunc(JSON.parse(hours))+" hours, "+Math.trunc(JSON.parse(mins))+" minutes, and "+Math.trunc(JSON.parse(secs))+" seconds remaining.";
+}

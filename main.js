@@ -43,3 +43,27 @@ function getDays(r=5){
 	
 	return round(toDays,r);
 }
+
+function getHours(r=5){
+	now = new Date()
+	timeRemaining = end-now
+	toDays = timeRemaining/(1000*60*60)
+	
+	return round(toDays,r);
+}
+
+function getMinutes(r=5){
+	now = new Date()
+	timeRemaining = end-now
+	toDays = timeRemaining/(1000*60)
+	
+	return round(toDays,r);
+}
+
+function getSeconds(r=5){
+	now = new Date()
+	timeRemaining = end-now
+	toDays = timeRemaining/(1000)
+	
+	return round(toDays,r);
+}

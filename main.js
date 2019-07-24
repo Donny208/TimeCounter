@@ -2,7 +2,7 @@ weekday = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"]
 month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"]
 
 start = new Date("July 7, 2019 09:00:00")
-end = new Date("Aug 24, 2019 18:00:00")
+end = new Date("Aug 25, 2019 17:00:00")
 
 function round(value, decimals) {
   return Number(Math.round(value+'e'+decimals)+'e-'+decimals);

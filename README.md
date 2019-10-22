@@ -1,2 +1,2 @@
 # TimeCounter
-Counts time, carry on.
+Counts time
